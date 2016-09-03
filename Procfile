@@ -1,0 +1,1 @@
+web: gunicorn cve.wsgi --log-file -
