@@ -5,10 +5,10 @@ from rest_framework import serializers
 class EmergenciaSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Emergencia
-        fields = ('alarma', 'direccion', 'latitud', 'longitud')
+        fields = ('id','alarma', 'direccion', 'latitud', 'longitud')
 
 
 class UnidadSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Unidad
-        fields = ('nombre', 'tipo', 'latitud','longitud')
+        fields = ('id','nombre', 'tipo', 'latitud','longitud')
